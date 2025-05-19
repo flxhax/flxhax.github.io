@@ -20,3 +20,31 @@
 <meta name="theme-color" content="#ffffff">
 
 {%- endcomment -%}
+
+
+
+
+
+
+
+{% capture favicon_path %}{{ '/assets/img/favicons' | relative_url }}{% endcapture %}
+
+<!-- Apple Touch Icon -->
+<link rel="apple-touch-icon" sizes="180x180" href="{{ favicon_path }}/apple-touch-icon.png">
+
+<!-- Standard Favicon PNG -->
+<link rel="icon" type="image/png" sizes="96x96" href="{{ favicon_path }}/favicon-96x96.png">
+
+<!-- Favicon SVG -->
+<link rel="icon" type="image/svg+xml" href="{{ favicon_path }}/favicon.svg">
+
+<!-- Favicon ICO fallback -->
+<link rel="shortcut icon" href="{{ favicon_path }}/favicon.ico">
+
+<!-- Web App Manifest -->
+<link rel="manifest" href="{{ favicon_path }}/site.webmanifest">
+
+<!-- Additional meta -->
+<meta name="apple-mobile-web-app-title" content="{{ site.title }}">
+<meta name="application-name" content="{{ site.title }}">
+<meta name="theme-color" content="#ffffff">
